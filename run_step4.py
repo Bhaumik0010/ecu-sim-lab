@@ -11,7 +11,6 @@ print("1. Read software version (open to everyone)")
 show(tester.request([0x22, 0xF1, 0x89]))
 
 print("2. Try to write the speed limit WITHOUT unlocking")
-show(tester.request([0x2E, 0x01, 0x00]) + b"")
 show(tester.request([0x2E, 0x01, 0x00, 0x00, 0x78]))
 
 print("3. Ask for a seed in the default session")
